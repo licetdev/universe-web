@@ -512,58 +512,8 @@ p {
     mask-image: radial-gradient(ellipse at 55% 52%, #000 35%, rgba(0, 0, 0, 0.86) 58%, transparent 83%);
 }
 
-.hero-andromeda-credit {
-    position: absolute;
-    right: 9%;
-    bottom: 13%;
-    max-width: 72%;
-    margin: 0;
-    padding: 7px 10px;
-    border: 1px solid rgba(160, 181, 235, 0.15);
-    border-radius: 7px;
-    background: rgba(9, 13, 30, 0.66);
-    color: #aab5d1;
-    font-family: var(--mono);
-    font-size: 7px;
-    line-height: 1.6;
-    backdrop-filter: blur(12px);
-}
-
-.hero-andromeda-credit a {
-    color: #cfceff;
-    text-underline-offset: 2px;
-}
-
 .hero-galaxy-canvas .viewer-fallback {
     color: #c4cde2;
-}
-
-.hero-model-credit {
-    position: absolute;
-    z-index: 4;
-    right: 4%;
-    bottom: 3%;
-    max-width: min(84%, 420px);
-    margin: 0;
-    padding: 9px 12px;
-    border: 1px solid rgba(160, 181, 235, 0.13);
-    border-radius: 8px;
-    background: rgba(7, 10, 22, 0.62);
-    color: var(--muted);
-    font-family: var(--mono);
-    font-size: 8px;
-    line-height: 1.7;
-    backdrop-filter: blur(14px);
-}
-
-.hero-model-credit a {
-    color: #d7e8ff;
-    text-decoration-color: rgba(108, 229, 255, 0.48);
-    text-underline-offset: 2px;
-}
-
-.hero-model-credit a:hover {
-    color: var(--cyan);
 }
 
 .hero-galaxy-canvas .viewer-fallback .fallback-orb {
@@ -794,24 +744,6 @@ p {
     padding: 0 12px;
     font-size: 9px;
     align-self: flex-start;
-}
-
-.galaxy-model-credit {
-    margin-top: 12px;
-    font-size: 8px;
-}
-
-.asset-credit {
-    margin: 15px 2px 0;
-    color: var(--muted);
-    font-size: 9px;
-    line-height: 1.7;
-}
-
-.asset-credit a {
-    color: #c9eaff;
-    text-decoration-color: rgba(108, 229, 255, 0.5);
-    text-underline-offset: 3px;
 }
 
 .atlas-sidebar,
@@ -1574,13 +1506,6 @@ p {
         padding: 7px 9px;
     }
 
-    .hero-andromeda-credit {
-        right: 4%;
-        bottom: 8%;
-        max-width: 82%;
-        font-size: 6px;
-    }
-
     .label-top {
         top: 9%;
         right: 1%;
@@ -1595,14 +1520,6 @@ p {
         max-width: 58%;
         padding: 10px 11px;
         font-size: 8px;
-    }
-
-    .hero-model-credit {
-        right: 2%;
-        bottom: 1%;
-        max-width: 69%;
-        padding: 7px 9px;
-        font-size: 7px;
     }
 
     .hero-bottom {

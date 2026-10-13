@@ -223,13 +223,7 @@ const objects = [
             ["Característica", "Estructura espiral"]
         ],
         description:
-            "Andrómeda es una galaxia espiral cercana a la Vía Láctea. Su estructura permite estudiar poblaciones estelares y la evolución de las galaxias.",
-        modelCredit: {
-            title: "Andromeda",
-            url: "https://sketchfab.com/3d-models/andromeda-ff09f2e6c6864523bedaa1c313a55a98",
-            author: "per.rb1",
-            authorUrl: "https://sketchfab.com/per.rb1"
-        }
+            "Andrómeda es una galaxia espiral cercana a la Vía Láctea. Su estructura permite estudiar poblaciones estelares y la evolución de las galaxias."
     },
     {
         id: "need-some-space",
@@ -245,13 +239,7 @@ const objects = [
             ["Constelación", "Osa Mayor"]
         ],
         description:
-            "La Galaxia de Bode (M81) es una galaxia espiral de gran diseño situada a unos 12 millones de años luz, en la constelación de la Osa Mayor. Johann Elert Bode la descubrió en 1774. Forma parte del Grupo de M81 y su vecina M82 muestra señales de interacción gravitatoria con este grupo. El modelo 3D de esta página es una representación artística, no una reconstrucción científica de M81.",
-        modelCredit: {
-            title: "Need some space?",
-            url: "https://sketchfab.com/3d-models/need-some-space-d6521362b37b48e3a82bce4911409303",
-            author: "Loïc Norgeot",
-            authorUrl: "https://sketchfab.com/norgeotloic"
-        }
+            "La Galaxia de Bode (M81) es una galaxia espiral de gran diseño situada a unos 12 millones de años luz, en la constelación de la Osa Mayor. Johann Elert Bode la descubrió en 1774. Forma parte del Grupo de M81 y su vecina M82 muestra señales de interacción gravitatoria con este grupo. El modelo 3D de esta página es una representación artística, no una reconstrucción científica de M81."
     }
 ];
 
@@ -597,43 +585,6 @@ function renderCreatorDetails(object, creator) {
         fact.append(title, content);
         factsContainer.appendChild(fact);
     });
-
-    if (creator === "licet") {
-        renderGalaxyCredits(object);
-    }
-}
-
-function renderGalaxyCredits(object) {
-    const container = $("#licet-object-credits");
-
-    if (!container) return;
-
-    container.replaceChildren();
-
-    const modelCredit = document.createElement("p");
-    modelCredit.className = "asset-credit galaxy-model-credit";
-    modelCredit.append("Modelo 3D: ");
-    appendExternalLink(modelCredit, `“${object.modelCredit.title}”`, object.modelCredit.url);
-    modelCredit.append(" por ");
-    appendExternalLink(modelCredit, object.modelCredit.author, object.modelCredit.authorUrl);
-    modelCredit.append(" · ");
-    appendExternalLink(
-        modelCredit,
-        "licencia CC BY 4.0",
-        "https://creativecommons.org/licenses/by/4.0/"
-    );
-    modelCredit.append(".");
-
-    container.appendChild(modelCredit);
-}
-
-function appendExternalLink(parent, text, href) {
-    const link = document.createElement("a");
-    link.href = href;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = text;
-    parent.appendChild(link);
 }
 
 function renderCreatorObjectList(creator) {
